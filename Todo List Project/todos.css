@@ -1,0 +1,92 @@
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', Arial;
+  background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* W3C */
+} /*for background gradient, used UIgradients.com */
+
+h1 {
+  background: #2980b9;
+  color:white;
+  margin: 0;
+  padding:  10px 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: 'Helvetica Neue', 'Helvetica', Arial;
+}
+
+ul {
+  list-style: none;
+  margin:0;
+  padding:0;
+  color: rgb(80, 80, 80); //WHY IS THIS NOT WORKING
+}
+
+input {
+  font-size: 18px;
+  color: #2980b9; //changes the color of typed
+  background-color: #f7f7f7;
+  background: #f7f7f7;
+  width: 100%;
+  padding:13px 13px 13px 20px;
+  box-sizing: border-box; // this is something you should make accessible for browsers
+  border: 3px solid rgba(0,0,0,0) /*border that makes it flush that we dont see */
+}
+
+input:focus { //similar idea to a a:hover, only runs in this mode
+  background-color: white; //be careful with focus attributes
+  border: 3px solid #2980b9;
+  outline: none;
+
+}
+
+li {
+  background: white;
+  height: 40px;
+  line-height: 40px; //centers them vertically
+}
+
+li:nth-child(2n) { /*This lets you choose every 2nd li*/
+  background: #f7f7f7;
+}
+
+li:hover span { /*this makes it active when you hover over li*/
+  width:40px;
+  opacity:1;
+}
+
+span {
+  background: #e74c3c;
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  width: 0px;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity:0;
+}
+
+span:hover {
+  width:40px;
+  opacity:1;
+}
+
+#container {
+  background: #f7f7f7;
+  width: 360px;
+  margin: 100px auto;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)
+}
+
+.fa-plus { /**/
+  float: right;
+}
+
+.completed {
+  color: gray;
+  text-decoration: line-through;
+}
