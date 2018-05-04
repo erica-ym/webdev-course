@@ -1,0 +1,14 @@
+<% include partials/header %>
+
+<h1>You fell in love with <%=thingVar %></h1>
+<!--NEED THOSE FUNKY BRACKETS -->
+<p>P.s. this is the love.ejs file</p>
+<%if(thingVar.toLowerCase()==="rusty") { %>
+    <p>Great choice, he is the best. </p>
+<%}%>
+
+<!-- two different kinds of tags, < % = and < % 
+first kind - the value that is returned is directly displayed on the page
+second kind - logic/loop bc not added to the html (control flow!)
+
+<% include partials/footer %>
